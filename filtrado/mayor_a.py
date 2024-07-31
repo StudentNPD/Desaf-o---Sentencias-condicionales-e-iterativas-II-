@@ -16,19 +16,19 @@ ventas = {
 }
 
 
-resp='S'
-while (resp=='S'):
+# resp='S'
+# while (resp=='S'):
     #lista de filtrado
-    filtrado={}
-
-    monto_buscado=int(input("Favor ingrese el monto minimo a buscar:"))
+filtrado={}
+monto_buscado = int(sys.argv[1])
+    # monto_buscado=int(input("Favor ingrese el monto minimo a buscar:"))
 
     #ciclo para recorrer la lista
-    for pos_lista in ventas:
+for pos_lista in ventas:
         if ventas[pos_lista]>monto_buscado:
             filtrado[pos_lista]=ventas[pos_lista]
 
-    print(f"Los datos mayores a {monto_buscado} son los siguientes")
-    print(filtrado) # mostramos el resultado
-    resp=str.upper(input("Desea realizar otra busqueda S/N:"))
+print(f"Los datos mayores a {monto_buscado} son los siguientes")
+print(filtrado) # mostramos el resultado
+    # resp=str.upper(input("Desea realizar otra busqueda S/N:"))
 print("gracias por utilizar nuestros servicios")
