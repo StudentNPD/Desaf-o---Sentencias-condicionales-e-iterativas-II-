@@ -27,7 +27,11 @@ Sistema Operativo  Windows 10, linux, Mac
 Lenguaje de programación Python 3.12.4
 
 ## Instrucciones para Ejecutar el Proyecto
-python mayor_a.py
+python mayor_a.py [arg]
+donde arg, es un valor entero
+ejemplo:
+python mayor_a.py 40000
+
 
 ## Autor
-Francisco Monroy
+Francisco Colomer, Francisco Monroy
