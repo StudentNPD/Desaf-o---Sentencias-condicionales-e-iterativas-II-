@@ -1,3 +1,5 @@
+import sys
+
 ventas = {
 "Enero": 15000,
 "Febrero": 22000,
