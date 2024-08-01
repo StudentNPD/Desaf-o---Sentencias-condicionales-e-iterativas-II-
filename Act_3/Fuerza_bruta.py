@@ -5,11 +5,11 @@
 # contraseña indicada. Deberá hacer este proceso letra por letra, de izquierda a derecha
 
 from string import ascii_lowercase
-
+import getpass
 
 
 #solicita que ingrese la contraseña
-contrasena = (input("Ingresa la contraseña a adivinar: "))
+contrasena = getpass.getpass(prompt="Ingresa la contraseña a adivinar: ")
 #convierte la contraseña a minusculas
 def fuerza_bruta(contrasena):
     intentos = 0
